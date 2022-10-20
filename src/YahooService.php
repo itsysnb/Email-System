@@ -8,18 +8,18 @@ class YahooService implements EmailProvider
     public function connect()
     {
         $message = "welcome to yahoo";
-        return $message;
+        echo $message;
     }
 
     public function get()
     {
         $message = "inbox is empty";
-        return $message;
+        echo $message;
     }
 
     public function send(Email $email)
     {
-        $message = "this message sent.";
-        return $message;
+        $message = "this message sent with yahoo service";
+        echo $message;
     }
 }
