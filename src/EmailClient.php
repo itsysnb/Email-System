@@ -8,9 +8,10 @@ class EmailClient
     {
     }
 
-    public function connect(EmailProvider $email)
+    public function connect()
     {
-        return $email;
+        $message = "welcome to email system";
+        return $message;
     }
 
     public function get()

@@ -5,9 +5,10 @@ namespace App;
 class YahooService implements EmailProvider
 {
 
-    public function connect(Email $email)
+    public function connect()
     {
-        return $email;
+        $message = "welcome to yahoo";
+        return $message;
     }
 
     public function get()
