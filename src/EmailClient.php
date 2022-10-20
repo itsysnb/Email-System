@@ -20,9 +20,8 @@ class EmailClient
         return $message;
     }
 
-    public function send(EmailProvider $email)
+    public function send(EmailProvider $emailProvider)
     {
-        $message = "this message sent.";
-        return $message;
+       $emailProvider->send($this->email);
     }
 }
