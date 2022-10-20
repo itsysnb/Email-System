@@ -4,7 +4,7 @@ namespace App;
 
 interface EmailProvider
 {
-    public function connect();
+    public function connect(Email $email);
     public function get();
-    public function send();
+    public function send(Email $email);
 }
