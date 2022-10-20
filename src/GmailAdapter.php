@@ -7,16 +7,16 @@ class GmailAdapter extends GmailService implements EmailProvider
 
     public function connect()
     {
-        // TODO: Implement connect() method.
+        $this->oAuth();
     }
 
     public function get()
     {
-        // TODO: Implement get() method.
+        $this->getLastWeekInbox();
     }
 
     public function send(Email $email)
     {
-        // TODO: Implement send() method.
+        $this->sendForNextWeek($email);
     }
 }
